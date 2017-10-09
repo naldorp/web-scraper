@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Video</title>
+
+  <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+  <script src="http://vjs.zencdn.net/4.12/video.js"></script>
+ <script src="https://github.com/videojs/videojs-contrib-media-sources/releases/download/v0.1.0/videojs-media-sources.js"></script>
+  <script src="https://github.com/videojs/videojs-contrib-hls/releases/download/v0.11.2/videojs.hls.min.js"></script>
+
+</head>
+<body>
+  <h1>Video</h1>
+
+  <video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" width="640" height="268" 
+  data-setup='{}'>
+    <source src="http://185.38.12.43/sec/1507549657/34393036331f8ccf5ffae783d477a07e5af0c9fa0c5ee454/ivs/6d/54/9e845f9462a9/hls/tracks-1,4/index.m3u8" type='application/x-mpegURL'>
+  </video>
+
+  <script>
+  var player = videojs('my_video_1');
+  </script>
+
+</body>
+</html>
+
+<!-- Replace current .m3u8 and check..current file has access issue-->
